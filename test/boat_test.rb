@@ -5,7 +5,7 @@ require 'pry'
 
 class BoatTest < Minitest::Test
 
-  def test_is_has_attributes
+  def test_it_has_attributes
     kayak = Boat.new(:kayak, 20)
 
     assert_equal :kayak, kayak.type
@@ -26,5 +26,4 @@ class BoatTest < Minitest::Test
 
     assert_equal 3, kayak.hours_rented
   end
-
 end
